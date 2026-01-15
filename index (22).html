@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Competitive HUB - Premium courses for MHT CET, JEE, NEET, GATE, Programming & B.Tech. Professional ExpertNotes, real reviews, expert guidance.">
+    <meta name="keywords" content="MHT CET, JEE, NEET, GATE, Programming, C++, Java, JavaScript, Web Development, ExpertNotes, Competitive Exams, B.Tech, DBATU, Curriculum Based Notes">
+    <title>Competitive HUB | Premium Educational Courses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af',
+                        accent: '#f97316',
+                        dark: '#0f172a',
+                        light: '#f8fafc'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(30, 64, 175, 0.1) 100%);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .review-card {
+            transition: all 0.3s ease;
+        }
+        .review-card:hover {
+            transform: scale(1.02);
+        }
+        .gallery-item {
+            transition: all 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        .social-icon {
+            transition: all 0.3s ease;
+        }
+        .social-icon:hover {
+            transform: translateY(-3px);
+            color: #f97316;
+        }
+        .pricing-card {
+            transition: all 0.3s ease;
+        }
+        .pricing-card:hover {
+            transform: scale(1.03);
+        }
+        .testimonial-carousel {
+            transition: transform 0.5s ease;
+        }
+    </style>
+</head>
+<body class="bg-light text-dark">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="bg-primary w-10 h-10 rounded-lg flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5s3.332.477 4.5 1.253" />
+                            </svg>
+                        </div>
+                        <span class="ml-3 text-xl font-bold text-primary">Competitive HUB</span>
+                    </div>
+                    <div class="hidden md:ml-10 md:flex md:space-x-8">
+                        <button onclick="scrollToSection('home')" class="text-gray-500 hover:text-primary border-b-2 border-transparent hover:border-primary px-1 pt-1 text-sm font-medium">Home</button>
+                        <button onclick="scrollToSection('courses')" class="text-gray-500 hover:text-primary border-b-2 border-transparent hover:border-primary px-1 pt-1 text-sm font-medium">Courses</button>
+                        <button onclick="scrollToSection('about')" class="text-gray-500 hover:text-primary border-b-2 border-transparent hover:border-primary px-1 pt-1 text-sm font-medium">About</button>
+                        <button onclick="scrollToSection('reviews')" class="text-gray-500 hover:text-primary border-b-2 border-transparent hover:border-primary px-1 pt-1 text-sm font-medium">Reviews</button>
+                        <button onclick="scrollToSection('gallery')" class="text-gray-500 hover:text-primary border-b-2 border-transparent hover:border-primary px-1 pt-1 text-sm font-medium">Gallery</button>
+                        <button onclick="scrollToSection('contact')" class="text-gray-500 hover:text-primary border-b-2 border-transparent hover:border-primary px-1 pt-1 text-sm font-medium">Contact</button>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <button class="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300">Buy Course</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-16 hero-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+                        <span class="block">Premium Educational</span>
+                        <span class="block text-primary mt-2">Courses for Competitive Exams</span>
+                    </h1>
+                    <p class="mt-6 text-lg text-gray-600 max-w-lg">
+                        Expert-led courses for MHT CET, JEE, NEET, GATE, Programming & B.Tech. with professional ExpertNotes and real-time guidance.
+                    </p>
+                    <div class="mt-8 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <button class="bg-primary hover:bg-secondary text-white px-8 py-3 rounded-lg font-semibold transition duration-300 transform hover:scale-105">
+                            Explore Courses
+                        </button>
+                        <button class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 rounded-lg font-semibold transition duration-300">
+                            View Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <div class="w-80 h-80 bg-primary rounded-full opacity-10 absolute -top-10 -left-10"></div>
+                        <div class="w-64 h-64 bg-accent rounded-full opacity-10 absolute -bottom-10 -right-10"></div>
+                        <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Education" class="relative rounded-2xl shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">Why Choose Competitive HUB?</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+                    We provide industry-standard educational resources designed by experts for competitive exams and career development.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="feature-card bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Expert Notes</h3>
+                    <p class="text-gray-600">
+                        Professional, curated notes by subject matter experts specifically designed for exam preparation.
+                    </p>
+                </div>
+                <div class="feature-card bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Timely Updates</h3>
+                    <p class="text-gray-600">
+                        Regular updates based on changing syllabi and exam patterns to ensure you stay ahead.
+                    </p>
+                </div>
+                <div class="feature-card bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Real Reviews</h3>
+                    <p class="text-gray-600">
+                        Genuine student feedback and testimonials to help you make informed decisions about your learning path.
+                    </p>
+                </div>
+                <div class="feature-card bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Comprehensive Material</h3>
+                    <p class="text-gray-600">
+                        All-in-one study resources covering syllabus, practice questions, and previous year papers.
+                    </p>
+                </div>
+                <div class="feature-card bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Success Guarantee</h3>
+                    <p class="text-gray-600">
+                        Our proven methodology ensures you achieve your target scores effectively and efficiently.
+                    </p>
+                </div>
+                <div class="feature-card bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Instant Access</h3>
+                    <p class="text-gray-600">
+                        Get instant access to all materials upon enrollment, no waiting time required.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Courses Section -->
+<section id="courses" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-900">Our Premium Courses</h2>
+            <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+                Affordable, exam-focused courses aligned with Indian competitive exams and DBATU university syllabus.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Course 1 -->
+            <div class="pricing-card bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900">MHT CET Law</h3>
+                        <p class="text-gray-600 mt-1">3-Year & 5-Year LLB entrance prep</p>
+                    </div>
+                    <div class="bg-accent text-white px-3 py-1 rounded-full text-sm font-semibold">
+                        Popular
+                    </div>
+                </div>
+
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M5 13l4 4L19 7"/></svg>Complete CET Law syllabus</li>
+                    <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M5 13l4 4L19 7"/></svg>Legal aptitude & logical reasoning</li>
+                    <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M5 13l4 4L19 7"/></svg>PYQs + mock tests</li>
+                    <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M5 13l4 4L19 7"/></svg>Rank & accuracy strategies</li>
+                </ul>
+
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold text-gray-900">₹999</span>
+                    <button onclick="window.open('https://t.me/cetlaw_clat','_blank')" class="bg-primary hover:bg-secondary text-white px-6 py-2 rounded-lg font-medium transition">
+                        Join on Telegram
+                    </button>
+                </div>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="pricing-card bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Programming Masterclass</h3>
+                <p class="text-gray-600 mb-6">Programming + Web fundamentals</p>
+
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M5 13l4 4L19 7"/></svg>C, C++, Java basics</li>
+                    <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M5 13l4 4L19 7"/></svg>HTML, CSS, JavaScript</li>
+                    <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M5 13l4 4L19 7"/></svg>Mini projects & logic building</li>
+                    <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M5 13l4 4L19 7"/></svg>Interview prep basics</li>
+                </ul>
+
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold text-gray-900">₹999</span>
+                    <button onclick="window.open('https://t.me/programmer_course','_blank')" class="bg-primary hover:bg-secondary text-white px-6 py-2 rounded-lg font-medium transition">
+                        Join on Telegram
+                    </button>
+                </div>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="pricing-card bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                <div class="flex justify-between items-start mb-6">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900">B.Tech CSE (DBATU)</h3>
+                        <p class="text-gray-600 mt-1">Semester 1–8 complete</p>
+                    </div>
+                    <div class="bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                        Recommended
+                    </div>
+                </div>
+
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M5 13l4 4L19 7"/></svg>DBATU curriculum aligned</li>
+                    <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M5 13l4 4L19 7"/></svg>Notes, PYQs & solved papers</li>
+                    <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M5 13l4 4L19 7"/></svg>Branch-wise sorted material</li>
+                    <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M5 13l4 4L19 7"/></svg>Exam scoring techniques</li>
+                </ul>
+
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold text-gray-900">₹999</span>
+                    <button onclick="window.open('https://t.me/btech_cse_coding','_blank')" class="bg-primary hover:bg-secondary text-white px-6 py-2 rounded-lg font-medium transition">
+                        Access on Telegram
+                    </button>
+                </div>
+            </div>
+
+            <!-- Course 4 -->
+            <div class="pricing-card bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Engineering Mathematics</h3>
+                <p class="text-gray-600 mb-6">M1 · M2 · M3 (DBATU)</p>
+
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M5 13l4 4L19 7"/></svg>Unit-wise theory notes</li>
+                    <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M5 13l4 4L19 7"/></svg>Solved numericals & examples</li>
+                    <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M5 13l4 4L19 7"/></svg>Exam-focused shortcuts</li>
+                </ul>
+
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold text-gray-900">₹500</span>
+                    <button onclick="window.open('https://t.me/btech_cse_coding','_blank')" class="bg-primary hover:bg-secondary text-white px-6 py-2 rounded-lg font-medium transition">
+                        Join Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Course 5 -->
+            <div class="pricing-card bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Engineering Chemistry</h3>
+                <p class="text-gray-600 mb-6">Quick revision + numericals</p>
+
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M5 13l4 4L19 7"/></svg>Unit-wise notes</li>
+                    <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M5 13l4 4L19 7"/></svg>Important numericals</li>
+                    <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M5 13l4 4L19 7"/></svg>Fast exam revision</li>
+                </ul>
+
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold text-gray-900">₹350</span>
+                    <button onclick="window.open('https://t.me/btech_cse_coding','_blank')" class="bg-primary hover:bg-secondary text-white px-6 py-2 rounded-lg font-medium transition">
+                        Join Now
+                    </button>
+                </div>
+            </div>
+
+            <!-- Course 6 -->
+            <div class="pricing-card bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Competitive Exams Hub</h3>
+                <p class="text-gray-600 mb-6">CET · JEE · NEET · GATE (Foundation)</p>
+
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M5 13l4 4L19 7"/></svg>MCQs & concept clarity</li>
+                    <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M5 13l4 4L19 7"/></svg>Aptitude & reasoning</li>
+                    <li class="flex items-center"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-width="2" d="M5 13l4 4L19 7"/></svg>Speed & accuracy training</li>
+                </ul>
+
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold text-gray-900">₹500</span>
+                    <button onclick="window.open('https://t.me/jee_neetmhtcet','_blank')" class="bg-primary hover:bg-secondary text-white px-6 py-2 rounded-lg font-medium transition">
+                        Join on Telegram
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900">Our Vision & Mission</h2>
+                    <div class="mt-8 space-y-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-primary text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Our Vision</h3>
+                                <p class="mt-2 text-gray-600">
+                                    To become the most trusted educational platform providing quality learning resources for competitive exams and technical education across India.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-secondary text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Our Mission</h3>
+                                <p class="mt-2 text-gray-600">
+                                                                    Our mission is to simplify learning by delivering affordable, structured, and exam-focused educational content supported by real student success and expert mentorship.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1584697964403-275f8f36e64f?auto=format&fit=crop&w=800&q=80" class="rounded-2xl shadow-xl" alt="Our Mission">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold">Student Reviews</h2>
+                <p class="mt-4 text-gray-600">Real feedback from learners who trusted Competitive HUB</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="review-card bg-white p-6 rounded-xl shadow-lg">
+                    <p class="text-gray-600">“The notes are extremely precise and exam-oriented. Helped me crack MHT CET Law.”</p>
+                    <div class="mt-4 font-semibold">— Rohan Patil</div>
+                </div>
+                <div class="review-card bg-white p-6 rounded-xl shadow-lg">
+                    <p class="text-gray-600">“Programming course is practical and beginner-friendly. Projects were very helpful.”</p>
+                    <div class="mt-4 font-semibold">— Aditi Sharma</div>
+                </div>
+                <div class="review-card bg-white p-6 rounded-xl shadow-lg">
+                    <p class="text-gray-600">“Best DBATU-based notes I’ve found. Clean explanations and good practice.”</p>
+                    <div class="mt-4 font-semibold">— Kunal Deshmukh</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold">Learning Gallery</h2>
+                <p class="mt-4 text-gray-600">Snapshots from our courses & resources</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <img class="gallery-item rounded-xl shadow-md" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80">
+                <img class="gallery-item rounded-xl shadow-md" src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=600&q=80">
+                <img class="gallery-item rounded-xl shadow-md" src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=600&q=80">
+                <img class="gallery-item rounded-xl shadow-md" src="https://images.unsplash.com/photo-1581093588401-22a2f3c4d6c3?auto=format&fit=crop&w=600&q=80">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">Contact Us</h2>
+                <p class="mt-4 text-gray-600">Have questions? We’re here to help.</p>
+            </div>
+
+            <form class="bg-white p-8 rounded-xl shadow-lg space-y-6">
+                <div>
+                    <label class="block text-sm font-medium">Name</label>
+                    <input type="text" class="mt-1 w-full border rounded-lg px-4 py-2 focus:ring-primary focus:border-primary">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium">Email</label>
+                    <input type="email" class="mt-1 w-full border rounded-lg px-4 py-2 focus:ring-primary focus:border-primary">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium">Message</label>
+                    <textarea rows="4" class="mt-1 w-full border rounded-lg px-4 py-2 focus:ring-primary focus:border-primary"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-secondary transition">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-gray-300 py-10">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h3 class="text-xl font-bold text-white">Competitive HUB</h3>
+            <p class="mt-2 text-gray-400">Empowering students through quality education</p>
+
+            <div class="flex justify-center space-x-6 mt-6">
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <p class="mt-6 text-sm text-gray-500">
+                © 2026 Competitive HUB. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
+
+                                   
